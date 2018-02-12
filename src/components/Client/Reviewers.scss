@@ -1,0 +1,165 @@
+$bgColor: #192135;
+$bdPage: #2e364b;
+$bgForm: #151926;
+$colorText: #fffeff;
+.table-reviewers{
+  .spinner-loading{
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    z-index: 99999
+  }
+  .table-responsive{
+    .table{
+      .item-sort{
+        display: flex !important;        
+        span{
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .col-client-7{
+        width: 14%;
+        display: unset;
+      }
+      
+      thead {
+        width: 100%;
+        background: #151925 !important;
+        text-align: center;
+        height: 50px;
+        tr{
+          th{
+            color: #fff;
+            // justify-content: center;
+          }
+          .sort-area{
+            position: relative;
+            margin-left: 5px;
+            .triangle-top {
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              border-bottom: 6px solid #FFFFFF;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              top: 0px;
+              border-bottom: 6px solid #666;
+            }
+            .triangle-bottom {
+              position: absolute;
+              width: 6px;
+              height: 6px;
+              border-top: solid 6px #FFFFFF;
+              border-left: solid 5px transparent;
+              border-right: solid 5px transparent;
+              top: 12px;
+              border-top: 6px solid #666;
+            }
+          }
+        }
+      }
+      tbody {
+        overflow-y: auto;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        overflow-x: hidden;
+        tr{
+            width: 100.7%;
+            height: 50px;
+            line-height: 50px;            
+            td{
+                
+                // justify-content: center;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                color: #fff;
+                border: none;
+                span{
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+                .btn-paid{
+                    padding: 5px;
+                    border: none;
+                }
+                .btn-unpaid{
+                    padding: 5px 13px;
+                    border: none;
+                }
+                .btn-success{
+                    background: #00a44e;
+                }
+                .btn-danger{
+                    background: #bc1f30;
+                }
+            } 
+            &:hover{
+              height: 50px;
+              line-height: 50px;
+              background-color: #5b636e;          
+            }       
+        }
+      }
+    }
+  }
+    
+    
+ 
+    color: $colorText !important;
+    margin-top: 10px;
+    background: #151925 !important;
+    .btn-circle{
+      width: 15px;
+      height: 15px;
+      background: #01a34e;
+    }
+    .brand_value
+      {
+        padding: 10px 8px;
+        span{
+          padding: 5px 15px;
+          background: #ee4036;
+        }
+        &:hover{
+          cursor: pointer;
+        }
+      } 
+    .btn-error2{
+      width: 15px;
+      height: 15px;
+      background: #bc202d;
+      border: none;
+    }
+     
+  .table thead, .table tbody, .table tr, .table td, .table th {
+    display: block;
+  }
+  .table tbody td, .table thead > tr> th {
+    float: left;
+    border-bottom-width: 0;
+    display: flex;
+  }
+  .table tbody::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  .table tbody::-webkit-scrollbar
+  {
+    width: 7px;
+    background-color: transparent;
+  }
+  .table tbody::-webkit-scrollbar-thumb
+  {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #ffffff;
+  }  
+}

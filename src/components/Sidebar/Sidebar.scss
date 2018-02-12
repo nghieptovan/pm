@@ -1,0 +1,96 @@
+$bgSidebar: #151925;
+$bgLi: #2a3245;
+
+.sideBar{
+	overflow: hidden;
+	background: $bgSidebar !important;
+	ul{
+		li:hover{
+			background: $bgLi !important;
+		}
+		li{
+			a{
+				color: #fffeff !important;
+				span{
+					font-size: 12px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+	img{
+		width: 80%;
+		margin: 10px 0;
+	}
+	.sc-bdVaJa{
+		padding: 8px 15px;
+		.sc-htpNat{
+			font-size: 11px;
+			font-weight: 400;
+		}
+		
+	}
+	.__rsnav___itemchild {
+		.sc-bwzfXH{
+			display: none;
+		}
+		.sc-htpNat{
+			margin-left: 25px;
+			width: 150px;
+			span{
+				line-height: 26px;
+			}
+		}
+	}
+
+	.sidebar-menu{
+		.side-nav-item
+		{
+			padding: 10px 5px 10px 25px;
+			background: $bgSidebar;				
+			&:hover{
+				background: #2a3245;
+			}
+			a{
+				position: relative;
+				color: #ffffff;		
+				font-size: 12px;
+				font-weight: 500;		
+			}
+			.side-nav-item-title{
+				position: relative;
+				color: #ffffff;		
+				font-size: 12px;
+				font-weight: 500;
+				.side-nav-icon{
+					margin-right: 20px;
+					font-size: 26px;
+					width: 20px;
+					text-align: center;
+				}
+			}
+			.side-nav-chevron {
+				font-size: .5625rem;
+				display: inline-block;
+				position: absolute;
+				right: 0;
+				top: 10px;
+			}
+			
+		}
+		.expanded{
+			background: transparent;
+			&:hover{
+			background: transparent;
+			}
+			.side-nav-item-children{
+				margin-top: 10px;
+			}
+		}
+	}
+	
+}
+.icon-sidebar {
+	font-size: 26px;
+	margin-right: 10px;
+}

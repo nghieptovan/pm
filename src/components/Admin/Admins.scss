@@ -1,0 +1,234 @@
+$bgButton: #ee4036;
+.create-admin-form {
+  margin-top: 15px;
+  color: #ffffff;
+  background: #151925 !important;
+  position: relative;
+  .spinner-loading{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 9999;
+  } 
+  form {
+    padding: 30px 90px 30px 100px;
+    .row {
+      margin: 0px;
+      .admin-status-wrapper {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: 40px;
+        padding: 20px 0px;
+        .admin-status {
+          margin: 0 auto;
+          display: flex;
+          width: fit-content;
+
+          .btn-radio {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            cursor: pointer;
+            padding: 0px 10px;
+            margin-right: 50px;
+            height: 16px;
+            display: flex;
+            width: fit-content;
+
+            input[type=radio] {
+              height: 16px;
+              width: 16px;
+              margin: 0px;
+            }
+            span {
+              margin-left: 5px;
+              height: 16px;
+              line-height: 16px;
+            }
+            /**&.active{
+              input[type=radio] {
+              }
+            }
+
+            &.deactivate {
+              input[type=radio] {
+              }
+            }*/
+          }
+        }
+      }
+      .inputrow {
+        margin-bottom: 5px;
+        height: 55px;
+        padding: 0px 75px 0px 75px;
+        input {
+          padding: 5px 0px;
+          width: 100%;
+          margin: 0px 0px 5px 0px;
+          color: #ffffff;
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid;
+          font-size: 17px;
+        }
+        &:after {
+          clear: both;
+        }
+        &.button-wrapper{
+          margin: 10px 0px 0px 0px;
+          height: auto;
+        }
+        .create-button {
+          padding: 5px 30px;
+          text-transform: uppercase;
+          background: $bgButton;
+          margin-right: 15px;
+
+          &:hover{
+            cursor: pointer;
+          }
+        }
+
+        %edit-admin-button-format {
+          padding: 5px 30px;
+          text-transform: uppercase;
+          background: $bgButton;
+          height: 30px;
+          
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        .edit-admin-button-wrapper {
+          float: right;
+          display: flex;
+          margin-top: 10px;
+          margin-right: 15px;
+          .update-button {
+            @extend %edit-admin-button-format;
+            margin-right: 10px;
+          }
+          .delete-button {
+            @extend %edit-admin-button-format;
+            margin-right: 10px;
+          }
+          .change-button {          
+            @extend %edit-admin-button-format; 
+            margin-right: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+          .cancel-button {
+            @extend %edit-admin-button-format;
+          }
+        }
+      }
+      .error-message {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .e-admin-title {
+    margin-left: -50px;
+  }
+  h2 {
+    text-align: center;
+    color: #ffffff !important;
+  }
+  p {
+    margin-top: 10px;
+  }
+  input {
+    width: 100%;
+    margin: 10px 0px;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 17px;
+  }
+  .date {
+    width: 300px;
+  }
+  .btn-create {
+    float: right;
+    background: #e25a2a;
+    color: #ffffff;
+  }
+  .float-left {
+    float: left;
+  }
+  .float-right {
+    float: right;
+  }
+  .ReactModal__Content {
+    overflow: hidden !important;
+  }
+  .text-danger {
+    text-align: left;
+    margin-top: 10px;
+    color: #e25a2a !important;
+  }
+}
+
+.customConfirm_Overlay {
+  position: fixed;
+}
+
+.customConfirm_Modal {
+  position: absolute;
+}
+
+.customConfirmOverlay_after-open {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.icon {
+  text-align: center
+}
+
+.customConfirm_after-open {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  border: none;
+  background: rgb(42, 50, 69);
+  overflow: hidden;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  width: 20%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.form-confirm {
+  margin-top: 0 !important;
+  margin-bottom: 10px;
+  .title-confirm-popup {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  %confirm-button {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background: $bgButton;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+.disableButton{
+  pointer-events: none;
+}
+
+.title-list{
+  font-weight: normal;
+}

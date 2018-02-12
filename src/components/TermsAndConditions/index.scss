@@ -1,0 +1,179 @@
+$fontSizeHeader: 15px;
+$fontSizeText: 13px;
+$colorHeader:#f24f23;
+$colorText: rgb(247, 164, 149);
+$color: #e15c26;
+$color_gradient_start: #f24e22;
+$color_gradient_end: #fba05d;
+.terms-conditions-zone {
+  /* Old browsers */
+  background: $color;
+  /* FF3.6-15 */
+  background: -moz-linear-gradient(top, $color_gradient_start 0%, $color_gradient_end 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(top, $color_gradient_start 0%, $color_gradient_end 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, $color_gradient_start 0%, $color_gradient_end 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24e22', endColorstr='#fba05d', GradientType=0);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+  padding: 45px 60px;
+  left: 0px;
+  top: 0px;
+  .content-wrapper {
+    width: 100%;
+    background: #FFFFFF;
+    padding: 20px 30px;
+    max-width: 864px;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    .background-wrapper {
+      width: 100%;
+      padding-top: 100%;
+      position: absolute;
+      margin: auto;
+      top: 50%;
+      left: 70%;
+      margin-top: -50%;
+      z-index: 1;
+      .background {
+        -webkit-box-shadow: inset 1px 1px 13px 1px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: inset 1px 1px 13px 1px rgba(0, 0, 0, 0.15);
+        box-shadow: inset 1px 1px 13px 1px rgba(0, 0, 0, 0.15);
+        background-color: #f2f2f2;
+        border-radius: 50%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+      }
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      .logoImg {
+        width: auto;
+        background: transparent;
+        height: 32px;
+      }
+      .title-wrapper {
+        margin: 40px auto;
+        .title {
+          font-weight: 500;
+          color: $colorHeader;
+          font-size: 30px;
+          font-family: 'Roboto', sans-serif;
+          padding: 0px;
+          margin: 0px;
+        }
+      }
+      .paragraph-wrapper {
+        margin-bottom: 20px;
+        .header {
+          color: $colorHeader;
+          font-size: $fontSizeHeader;
+          font-weight: 400;
+          margin: 0px;
+        }
+        .text {
+          font-size: $fontSizeText;
+          text-align: justify;
+          margin: 10px 0px 0px 0px;
+          color: black
+        }
+      }
+    }
+  }
+  /*.container-fluid{
+    background: white;
+    width: 60%;
+    height: 100%;
+    .logoImg{
+      margin-top: 20px;
+      width: auto;
+      background: transparent;
+      height: 26px;
+    }
+    .title{
+      font-weight: 500;
+      color: $colorHeader;
+      font-size: 30px;
+      font-family: 'Roboto', sans-serif;
+      padding-bottom: 10px;
+    }
+    .paragraph-wrapper{
+      padding: 0 50px 10px 50px;
+      .header{
+        color: $colorHeader;
+        font-size: $fontSizeHeader;
+        font-weight: 400;
+      }
+      .text{
+        font-size: $fontSizeText;
+        text-align: justify;
+      }
+    }
+  }*/
+}
+
+@media screen and (max-width: 768px) {
+  .terms-conditions-zone {
+    .content-wrapper {
+      .background-wrapper {
+        display: none;
+      }
+
+      .content {
+        .title {
+          font-weight: 400;
+          color: #f24f23;
+          font-size: 16px;
+          font-family: 'Roboto', sans-serif;
+          margin: 20px auto;
+        }
+        .paragraph-wrapper {
+          .header {}
+          .text {}
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px){
+  .terms-conditions-zone {
+    padding: 0px;
+    .content-wrapper {
+      .background-wrapper {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px){
+  .terms-conditions-zone {
+    padding: 0px;
+    .content-wrapper {
+      padding: 60px 40px;
+      .background-wrapper {
+        display: none;
+      }
+      .content{
+        .logoImg {
+          height: 25px;  
+        }
+        .title-wrapper{
+          margin: 20px auto;
+          .title{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

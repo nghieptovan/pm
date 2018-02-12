@@ -1,0 +1,85 @@
+$colorGrey: #182037;
+$colorText1: #7791a8;
+$colorDanger: #f54949;
+$colorSuccess: #41c646;
+$colorInfo: #67a4f4;
+$colorWarning: #b88f01;
+.descriptionField{
+    resize: none
+}
+.client-dashboard{
+    .widget-block{
+        padding: 5px 5px;
+        // height: 90px;
+        // margin-bottom: 15px;
+        .widget-box{
+            background: $colorGrey !important;
+            button {
+                margin: 20px;
+                .icon-upload-icon {
+                    font-size: 22px;
+                    position: relative;
+                    left: -3px;
+                }
+                .icon-check-icon {
+                    font-size: 26px;
+                    position: relative;
+                    left: -4px;
+                    top: 2px;
+                }
+                .icon-accnouce {
+                    font-size: 30px;
+                    position: relative;
+                    left: -6px;
+                }
+                .icon-group-icon {
+                    font-size: 39px;
+                    position: relative;
+                    left: -11px;
+                    top: -5px;
+                }
+                .icon-cup-icon {
+                    font-size: 35px;
+                    position: relative;
+                    left: -10px;
+                    top: -1px;
+                }
+            }
+        }
+        .info-widget-box{
+            margin-top: 15px;
+            margin-right: 5px;
+            width: calc(100% - 90px);
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            .title-widget-box{
+                color: $colorText1;
+                font-size: 12px;                
+            }
+            .content-widget-box{
+                font-size: 24px !important;               
+            }
+            .color-danger{
+                color: $colorDanger;
+            }
+            .color-success{
+                color: $colorSuccess;
+            }
+            .color-info{
+                color: $colorInfo;
+            }
+            .color-warning{
+                color: $colorWarning;
+            }
+        }
+    }
+    .chart-row{
+        .chart-box{
+            min-height: 300px;
+            background: $colorGrey;
+            margin: 0 !important;
+        }
+    }
+    
+}

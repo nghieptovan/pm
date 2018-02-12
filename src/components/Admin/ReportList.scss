@@ -1,0 +1,52 @@
+.report-page{
+    .spinner-loading{
+        position: absolute;
+        top: 45%;
+        left: 53%;
+        z-index: 99999
+    }
+    .report-title{
+        background: #151925  !important;
+        padding: 15px;
+        text-align: center;
+        height: 50px;
+        color: #fff;
+        font-weight: 400;
+        span {
+            font-size: 16px;
+        }
+    }
+    .title-challenge{
+        position: absolute;
+        left: 0;
+        color: #ffffff;
+    }
+    .createadmin {
+        height: 12px;
+        line-height: 12px;
+        vertical-align: middle;
+        padding: 15px;
+        font-size: 13px;
+        white-space: nowrap;
+        padding-bottom: 23px;
+    }
+    .contentList{
+        color: #ffffff;
+        height: auto;
+        width: 100%;
+        .item{
+            height: 45px;
+            padding: 15px 0;
+            &:hover{
+                background: #4e595c;
+            }
+            background-color: inherit;
+            .item-brandName {
+                width: 16.5%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

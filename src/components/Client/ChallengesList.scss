@@ -1,0 +1,121 @@
+.btn-show-more {
+    float: right;
+    background: #151925;
+    text-align: center;
+    width: 100px;
+    float: right;    
+    height: 25px;
+    line-height: 25px;   
+    color: white;   
+    &:hover{
+        background: #2a3245;
+        color: #337ab7;
+    }
+}
+.spinner-loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+}
+.image-thumb.rated{
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+.image-top-6{
+    background: #151925;
+    height: 90px;
+    overflow: hidden;
+    .image{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        img{
+            height: 90px;
+            width: auto;
+            margin: 0 auto;
+            position: relative;
+            display: block;
+        }
+    }
+    .info-footer{
+        height: 32px;
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 30px);
+        background: #000000;
+        opacity: 0.8;
+        padding: 0 5px;
+        .top-footer{
+            height: 18px;
+            line-height: 18px;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .bot-footer{
+            height: 14px;
+            line-height: 14px;
+            font-size: 10px;
+            margin: 0;
+            display: flex;    
+            .right-side{
+                position: absolute;
+                float: right;
+                right: 0;
+            }
+        }
+    }
+    .video-icon{
+        position: absolute;
+        border: 1px solid #000;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        border-radius: 50%;
+        background: #000;
+        padding: 3px 5px;
+        left: calc(50% - 12px);
+        bottom: 50px;
+        z-index: 999;
+        i{
+            color: #ffffff;
+        }
+    }
+}
+
+.mt-chall-arch-list {
+    color: #fff;    
+}
+.nodata{
+    animation: 600ms fadeIn;
+    animation-fill-mode: forwards;        
+    visibility: hidden;
+}
+@keyframes fadeIn {
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+}
+.custom_share_challenge{
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    border: none;
+    background: #2a3245;
+    overflow: hidden;
+    border-radius: 0;
+    outline: none;
+    padding: 10px 5px;
+    width: 70%;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

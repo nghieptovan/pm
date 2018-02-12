@@ -1,0 +1,47 @@
+.contents{
+    background: transparent;
+    margin: 10px 0px;
+    color: #fff;    
+    .content-title{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        span{
+            font-weight: 600;
+        }
+        img{
+            height: 30px;
+            margin-right: 20px;
+        }
+    }
+    .content-body{
+        position: relative;
+        .list-page-facebook{
+            margin-left: 30px;
+            .page-facebook{
+                margin-top: 10px;
+                height: 40px;
+                display: flex;
+                .left-side{
+                    position: relative;
+                    float: left;
+                    img{
+                        height: 40px;
+                        margin: 0 10px;
+                    }
+                }
+                .right-side{
+                    position: relative;
+                    float: right;
+                    p{
+                        line-height: 20px;
+                        margin-bottom: 0px;
+                        font-weight: 600;
+                    }
+                    span{
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

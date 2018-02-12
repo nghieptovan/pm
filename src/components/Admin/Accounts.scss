@@ -1,0 +1,350 @@
+.spinner-loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99999
+}
+.custom_after_open_create_transition{
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    border: none;
+    background: #2a3245;
+    overflow: hidden;
+    border-radius: 0;
+    outline: none;
+    padding: 10px 5px;
+    width: 70%;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+   .area-field{
+        height: 110px;
+        margin: 20px 0px;
+        .descriptionField{
+            background: #ffffff !important;
+            color: #2a3245 !important;
+        }        
+        .btnAdd-fix{
+            padding: 5px 10px;
+            border: none;
+            border-radius: 0;
+            background: #a83b1a;
+            color:#ffffff;
+            position: relative;
+            float: right;
+            margin-top: 70px;
+        }
+   }
+   .rw-popup-container{
+       .rw-popup-transition{
+           .rw-popup{
+               border: none;               
+               .rw-list-option{
+                   background: #ffffff;
+                   color: #000000;
+                   font-size: 10px;
+                   height: 25px;
+                   line-height: 25px;
+                   &:hover{
+                    background: #000000;
+                    color: #ffffff; 
+                    border: none;
+                   }
+               }
+               .rw-state-focus{
+                background: #000000;
+                color: #ffffff;
+                border: none;
+               }
+               .rw-state-selected{
+                background: #000000;
+                color: #ffffff; 
+                border: none;
+               }
+           }
+       }
+   }
+   @media (max-width: 991px) {
+    .area-field{
+        height: 150px;
+        margin: 20px 0px;
+        .descriptionField{
+            background: #ffffff !important;
+            color: #2a3245 !important;
+        }        
+        .btnAdd-fix{
+            padding: 5px 10px;
+            border: none;
+            border-radius: 0;
+            background: #a83b1a;
+            color:#ffffff;
+            position: relative;
+            float: right;
+        }
+   }
+    }
+}
+.custom_after_open_create_transition_sucess{
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    border: none;
+    background: #2a3245;
+    overflow: hidden;
+    border-radius: 0;
+    outline: none;
+    padding: 10px 5px;
+    width: 300px;
+    height: 140px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+    .no-data{
+        color: #ffffff;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    .report-page-fix{
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        padding-right: 15px;
+        padding-left: 22px;
+        margin-right: 31px;
+        margin-left: 0px;
+        padding-top: 40px;
+        .challenge-rows
+            
+        {
+          .item-report{
+              margin: 10px 0px;
+          }
+
+            .button-fix {
+                background: #151925 !important;
+                width: 100%;
+                border: 0px;
+                color: aliceblue;
+                font-weight: normal;
+                height: 34px;
+                line-height: 34px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+   }
+   
+
+
+
+.popupDiv {
+    background: #2a3246;
+    width: 125%;
+    position: initial;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%);
+    z-index: 9999;
+    padding-left: 25px;
+    padding-right: 31px;
+    .top-row-fix {
+        .top-left-fix {            
+            #rw_1_input .rw-widget-container .rw-dropdown-list-input .rw-placeholder{
+                margin-left: -11px;
+            }
+
+            .rw-popup-container .rw-state-focus {
+                background: #0e0e0e;
+                color: aliceblue;
+            }
+
+            .dropdown span {
+                color: #bbc0c3;
+                margin: 0px -15px;
+                padding: 0px 0px;
+                font-weight: bold;
+            }
+    
+            .dropdown button {
+                float: right;
+                background: #2a3246;
+                border: 0px;
+                margin: 0px -16px;
+            }
+    
+            .dropdown-menu {
+                float: right;
+                margin: 3px 75px;
+                text-align: center;
+                
+                li a:hover{
+                    background-color: #2a3246;
+                    color: #cacfda;
+                }
+            }
+        }
+    
+        .top-middle-fix {
+            border-bottom: 1px solid #cacfda;
+            span {
+                color: #999;
+            }
+
+            input {
+                background: #2a3246;
+                border: 0px;
+                margin: 3px 0px;
+                color: aliceblue;
+                padding: 0px 4px;
+                width: 114px;
+            }
+        }
+
+        .top-right-fix {
+            display: flex;
+            border-bottom: 1px solid #cacfda;
+            .currency{
+                color: #999; 
+            }
+            input {
+                background: #2a3246;
+                border: 0px;
+                margin: 3px 0px;
+                color: aliceblue;
+                padding: 0px 19px;
+                font-weight: bold;
+            
+            }
+        }
+    }
+
+    .down-row-fix {
+        margin-left: 3px;
+        margin-top: 71px;
+        margin-bottom: 25px;
+        
+        .down-left-fix textarea{
+            width: 415px;
+            height: 95px;
+            resize: none;
+            font-size: 13px;
+            margin-left: 69px;
+            color: black;
+        }
+     
+    }
+}
+
+@media (max-width: 1270px) {
+    .popupDiv{
+        background: #2a3246;
+        width: 125%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 85px;
+        position: initial;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -10%);
+        z-index: 9999;
+
+        .top-row-fix .top-right-fix {
+            border-bottom: 1px solid #cacfda;
+            width: 251px;
+            padding-left: 0px;
+            margin-left: 29px;
+            margin-top: 0px;
+        }
+    }
+}
+
+@media (max-width: 952px) {
+    .popupDiv{
+        .top-row-fix .top-left-fix {
+            width: 281px;
+            margin-left: 67px;
+            margin-top: -19px;
+        }
+
+        .top-row-fix .top-middle-fix {
+            border-bottom: 1px solid #cacfda;
+            width: 250px;
+            padding-left: 0px;
+            margin-left: 83px;
+            margin-top: 2px;
+        }
+
+        .top-row-fix .top-right-fix {
+            margin-left: 83px;
+        }
+}
+
+@media (max-width: 800px) {
+    .popupDiv{
+        background: #2a3246;
+        width: auto;
+        height: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: 18%;;
+        margin-top: 85px;
+        position: initial;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -10%);
+        z-index: 9999;
+        
+        .row {
+            margin-right: 0px !important;
+            margin-left: -55px !important;
+            
+        }
+        .top-row-fix {
+            .top-right-fix {
+                border-bottom: 1px solid #cacfda;
+                width: 250px;
+                padding-left: 0px;
+                margin-left: 84px;;
+                margin-top: 26px;
+            }
+        }
+        .down-row-fix {
+            .down-left-fix {
+                width: 415px;
+                height: 95px;
+                resize: none;
+
+                textarea{
+                    width: 318px;
+                    height: 95px;
+                    resize: none;
+                }
+
+                .btnAdd-fix {
+                    float: right;
+                    margin-top: 71px;
+                    margin-right: 22px;
+                    width: 71px;
+                    background: #a83b1a;
+                    color: aliceblue;
+                    border: 0px;
+                    height: 30px;
+                    font-weight: bold;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+}
+

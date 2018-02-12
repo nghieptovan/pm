@@ -1,0 +1,355 @@
+.react-tabs{
+    .spinner-loading{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99999;
+    }
+    .react-tabs__tab-list{
+        background: #232a3c;
+        border: none;
+        color: #f5f5f5;
+        height: 44px;
+        .react-tabs__tab{
+            width: 100px;
+            text-align: center;
+            border: none;
+            background: #2a3245;
+            height: 40px;
+            line-height: 28px;
+            margin: 1px 0px;
+            font-size: 18px;
+        }
+        .react-tabs__tab--selected{
+            border-radius: 0;
+            color: #e15b26;
+            background-color: #151925; 
+        }
+    }    
+    .react-tabs__tab-panel{
+        .creators-page{
+            margin: 10px 5px;
+            .container-fluid{
+                padding: 0;
+                .padding5{
+                    padding: 0 5px;
+                }
+                .content-page{
+                    background: #151925;
+                    color: #ffffff;
+                    .block-list-creator{
+                        height: 100%;
+                        background: #151925;
+                        font-size: 12px;        
+                        .col-md-15-7{
+                            width: 15%;
+                        }              
+                        .col-md-20-7{
+                            width: 20%;
+                        }  
+                        .col-md-10-7{
+                            width: 10%;
+                        }
+                        .action-bar{
+                            
+                            position: relative;
+                            display: flex;
+                            height: auto;
+                            line-height: 30px;
+                            padding: 10px 0px;
+                            .left-side{
+                                position: relative;
+                                float: left;
+                                left: 0px;
+                                span{
+                                    color: #e15b26;
+                                }
+                                .btn-export{
+                                    vertical-align: middle; 
+                                    background: #2a3245;
+                                    border: none;
+                                    border-radius: 10px;
+                                    color: #fff;
+                                    padding: 4px 10px;
+                                    span{
+                                         color: #fff;
+                                    }
+                                 }
+                            }
+                            .right-side{
+                                position: relative;
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                float: right;
+                                padding: 3px 0px;
+                                .btn-export{
+                                    vertical-align: middle; 
+                                    background: #2a3245;
+                                    border: none;
+                                    border-radius: 10px;
+                                    color: #fff;
+                                    padding: 4px 10px;
+                                    height: 28px;
+                                    span{
+                                         color: #fff;
+                                    }
+                                 }
+                                .btn-addnew{
+                                    vertical-align: middle; 
+                                    background: #e15b26;
+                                    border: none;
+                                    border-radius: 10px;
+                                    color: #fff;
+                                    padding: 4px 10px;
+                                    height: 28px;
+                                    margin-left: 10px;
+                                    span{
+                                         color: #fff;
+                                    }
+                                } 
+                                .input-search{
+                                    background: #ffffff;
+                                    width: 100px;
+                                    float: right;
+                                    border-radius: 20px 0px 0px 20px;
+                                    border: none;
+                                    height: 25px;
+                                    color: #000000;
+                                    margin: 0px;
+                                    font-size: 12px;
+                                }
+                                .search-btn{
+                                    margin-top: -3px;
+                                    padding: 0px;
+                                    .btn-search-icon{
+                                        padding: 3px;
+                                        height: 25px;
+                                        width: 32px;
+                                        border: 0;
+                                        border-radius: 0 20px 20px 0px;
+                                        background: #2a3245;
+                                        color: #ffffff;
+                                    }
+                                }
+                                .sort-list-creator{
+                                    margin-left: 10px;
+                                    i{                            
+                                        padding: 8px 6px 5px 6px;
+                                        border-radius: 50%;
+                                        background: #2a3245;
+                                    }
+                                    span{
+                                        font-size: 14px;                            
+                                        padding: 5px 5px 5px 5px;
+                                        border-radius: 50%;
+                                        background: #2a3245;
+                                    }
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .list-creator{
+                            padding: 0 10px;
+                            .header-list{
+                                height: 30px;
+                                line-height: 30px;
+                                background: #2a3245;
+                                border-radius: 20px;
+                                position: relative;
+                                display: flex;
+                                .checkbox-list-creator{
+                                    width: 13px;
+                                    margin: 0px;
+                                    margin-top: 9px;
+                                    margin-left: 5px;
+                                    position: absolute;
+                                }
+                                span{
+                                    position: relative;
+                                    margin-left: 10px;
+                                }
+                                div{
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;                                    
+                                }
+                                .padding3{
+                                    padding: 0px 3px;
+                                }
+                            }
+                            .content-list{                                
+                                .item-list{
+                                    height: 30px;
+                                    line-height: 30px;
+                                    position: relative;
+                                    display: flex;
+                                    .first-column{
+                                        .checkbox-list-creator{
+                                            width: 13px;
+                                            margin: 0px;
+                                            margin-top: 9px;
+                                            margin-left: 8px;
+                                            position: absolute;                                
+                                        }
+                                        span {
+                                            position: relative;
+                                            margin-left: 25px;
+                                        }
+                                    }
+                                    div{
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                    }
+                                    &:hover{
+                                        cursor: pointer;
+                                        background: #2a3245;
+                                    }
+                                    .padding3{
+                                        padding: 0px 3px;
+                                    }
+                                    
+                                }
+                                
+                            }        
+                        }
+                    }
+                }
+                @media screen and (max-width: 991px) {
+                    .right-page{
+                        margin-top: 10px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.creator-client{
+    background: transparent;
+    padding: 0 15px;
+    .message-block{
+        .header-message{
+            height: 30px;
+            line-height: 30px;
+            background: #151925;
+            span{
+                color: #fff;
+                margin-left: 10px;
+            }
+            
+        }
+        .body-message{
+            overflow: hidden;
+            .mce-statusbar {
+                display: none;
+            }
+            .mce-content-body {
+                p{
+                    margin: 5px 0px; 
+                }
+            }
+        }
+        .footer-message{
+            position: relative;
+            height: 30px;
+            line-height: 30px;
+            background: #f5f5f5;
+            .send-button{
+                background: #e15b26;
+                padding: 0px 10px;
+                color: #ffffff;
+                height: 20px;
+                line-height: 20px;
+                margin: 5px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .error-msg{
+                margin-left: 5px;
+                color: #E41515;
+            }
+        }
+    }
+    .creator-block{
+        background: #151925;
+        height: 100%;
+        .add-creator{
+            text-align: center;
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 50px;
+            span{
+                background: #e15b26;
+                padding: 5px 10px;
+                color: #ffffff;
+                height: 20px;
+                line-height: 20px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .body-creator{
+            position: relative;
+            margin: 20px;
+            color: #ffffff;    
+            width: 85%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+   
+            .item-creator{
+                margin: 5px 0;
+                font-size: 18px;
+                display: flex;
+                height: 35px;
+                i{
+                    width: 10%;
+                    position: relative;
+                    right: 0;
+                    top: 0;
+                    line-height: 26px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .createMail {
+                    width: 90%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+.custom_add_creator_mail{
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    border: none;
+    background: #2a3245;
+    overflow: hidden;
+    outline: none;
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    .title{
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+    }
+    .detail-creator{
+        margin: 20px 0px;
+        text-align: center;
+    }
+}

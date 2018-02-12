@@ -1,0 +1,54 @@
+.container-fluid{
+  padding-bottom: 0 !important;
+}
+
+.redux-form-error-message{
+  border: none;
+  font-weight: 400;
+  color: #e25a2a;
+  font-size: 12px;
+}
+
+.redux-form-error-message:before{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\F06A';
+  margin-right: 5px;
+}
+.react-datepicker-wrapper{
+  width: 100%;
+  .react-datepicker__input-container{
+    width: 100%;
+    .inputDate{
+      width: 100%;
+    }
+  }
+}
+.iconDate{
+  position: absolute;
+  right: 50px;
+  bottom: 35px;
+  font-size: 22px;
+}
+
+.close-button {
+  color: #c14e26;
+  font: 30px/100% arial, sans-serif;
+  position: absolute;
+  right: 13px;
+  text-decoration: none;
+  top: 10px;
+  text-shadow: 0 1px 0 #c14e26;
+  z-index: 999;
+}
+
+.close-button:after{
+  content: '✖';
+}
+
+.close-button:hover {
+  color: #e25a2a;
+}

@@ -1,0 +1,1081 @@
+$colorGrey: #182037;
+$colorText1: #7791a8;
+$colorDanger: #f54949;
+$colorSuccess: #41c646;
+$colorInfo: #67a4f4;
+$colorWarning: #b88f01;
+.client-dashboard{       
+    color: #ffffff;
+    padding: 0 10px !important;
+    .widget-block{
+        padding: 5px 5px;
+        // height: 90px;
+        // margin-bottom: 15px;
+        .widget-box{
+            background: $colorGrey !important;
+            
+            button{
+                margin: 20px;
+            }
+        }
+        .info-widget-box{
+            margin-top: 15px;
+            margin-right: 5px;
+            width: calc(100% - 90px);
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            .title-widget-box{
+                color: $colorText1;
+                font-size: 12px;                
+            }
+            .content-widget-box{
+                font-size: 28px !important;
+                font-weight: 500;
+            }
+            .color-danger{
+                color: $colorDanger;
+            }
+            .color-success{
+                color: $colorSuccess;
+            }
+            .color-info{
+                color: $colorInfo;
+            }
+            .color-warning{
+                color: $colorWarning;
+            }
+        }
+    }
+    .chart-row{
+        margin: 10px 0px;
+        height: auto;
+        .margin5px{
+            padding: 0 5px !important;
+        }
+        .chart-block{
+            min-height: 320px;
+            height: 100%;
+            background: #182037;
+            .weekly-monthly{                                
+                height: 320px; 
+                .body-chart{
+                    height: 280px;
+                    padding: 5px;
+                    .no-data{
+                        color: #ffffff;
+                    }
+                    .datamap{
+                        .labels{
+                            text{
+                                fill: #ffffff !important;
+                            }
+                            line{
+                                stroke: #ffffff !important;
+                            }
+                        }                    
+                    }
+                    .datamaps-subunits{
+                        path{
+                            stroke: #fff !important; 
+                        }
+                    }
+                    .datamaps-hoverover{
+                        font-family: 'Roboto', sans-serif !important;
+                        .hoverinfo{
+                            color: #000;
+                        }
+                    }
+                    .chart{
+                        width: 50%;
+                        text-align: center;
+                        height: 180px;
+                        margin-top: 5px;
+                        span{
+                            color: #ffffff;
+                            top: 50%;
+                            position: absolute;
+                            left: 50%;
+                            width: 74px;
+                            font-size: 12px;
+                            transform: translate(-50%, -50%);
+                        }
+                        .chartarea{
+                            height: 180px;
+                            
+                        }
+                        .textarea{
+                            color: #ffffff;
+                            font-size: 12px;
+                            .reward-spend{
+                                color: #f29c11;
+                            }
+                            .image-upload{
+                                color: #1bbc9b;
+                            }
+                            .video-upload{
+                                color: #d25400;
+                            }
+                            i{
+                                margin: 0px 5px 0px 20px;
+                            }
+                        }
+                    }
+                    .table-responsive{
+                        overflow-x: hidden;
+                        overflow-y: scroll;
+                        height: 230px;
+                        thead {
+                            tr {
+                                th{
+                                    border: none;
+                                    padding: 8px;
+                                    text-align: center;
+                                }
+                              }
+                            
+                          }
+                          tbody {
+                            tr{
+                                td{
+                                    border: none;
+                                    color: #ffffff;
+                                    padding: 8px;
+                                    font-size: 12px;
+                                    text-align: center;
+                                }
+                                &:hover{
+                                  background: #32bef3;
+                                  td{
+                                      color: #000000;
+                                  }  
+                                }
+                            }
+                            
+                          }
+                        
+                    }
+                    .map{
+                        height: 230px;
+                        min-height: 230px;
+                        position: absolute;
+                        margin: 0 auto;
+                        left: 50%;
+                        transform: translate(-50%, 0%);
+                    }
+                }              
+                .content-chart{
+                    position: relative;
+                    bottom: 0;
+                    margin: 0 auto;
+                    height: 280px !important;
+                    img{
+                        width: 100%;
+                    }
+                    .recharts-cartesian-axis-tick-value{
+                        text-anchor: middle;
+                        font-size: 10px;
+                    }
+                    .recharts-default-tooltip{
+                        color: #32BEF3;
+                    }
+                    .recharts-tooltip-label{
+                        color: #32BEF3;
+                    }
+                    .recharts-cartesian-grid-vertical{
+                        display: none;
+                    }
+                    .recharts-cartesian-grid-horizontal{
+                        display: none;
+                    }
+                    .custom-tooltip{
+                        background:#fff;
+                        color: #32BEF3;
+                        .label{
+                            color: #32BEF3;
+                            &:hover{
+                                color: #32BEF3; 
+                            }
+                        }
+                        .desc{
+                            font-size: 11px;
+                            margin-left: 12px;
+                            margin-right: 10px;
+                            &:hover{
+                                color: #32BEF3; 
+                            }
+                        }
+                    }
+                    .datamap{
+                        .labels{
+                            text{
+                                fill: #ffffff !important;
+                                stroke-width: 1px !important;
+                            }
+                            line{
+                                stroke: #ffffff !important;
+                                stroke-width: 1px !important;
+                            }
+                        }
+                    }
+                    .datamaps-subunits{
+                        path{
+                            stroke: #fff !important; 
+                            stroke-width: 1px !important;
+                        }
+                    }
+                    .datamaps-hoverover{
+                        .hoverinfo{
+                            color: #000;
+                        }
+                    }
+                }
+                .rsm-svg, .rsm-zoomable-group, .rsm-geographies{
+                    height: 250px !important;
+                    position: absolute;
+                    width: 100%;
+                    left: 15px;
+                }
+                .zoominout{
+                    display: grid;
+                    margin-top: 200px;
+                    padding: 5px;
+                    position: relative;
+                    i{
+                        // border: 1px solid red;
+                        padding: 5px;
+                        margin: 2px 0;
+                        color: #182037;
+                        background: #ffffff;
+                    }
+                    button{
+                        margin: 5px 0px;
+                    }
+                }
+                .left-title{
+                    position: absolute;
+                    left: 0;
+                    vertical-align: middle;
+                    color: #ffffff;
+                    top: 50%;
+                    transform:rotate(270deg);
+                    -moz-transform:rotate(270deg);
+                    -webkit-transform:rotate(270deg);
+                    -ms-transform:rotate(270deg);
+                    -o-transform:rotate(270deg);
+                }
+                .title-chart{
+                    position: relative;
+                    top: 0px;
+                    width: 100%;
+                    color:#41c646;
+                    height: 40px;
+                    line-height: 40px;
+                    padding: 0 15px;
+                    .title{
+                        color: #ffffff;
+                        font-weight: 400;
+                        // margin-left: 15px;                        
+                    }
+                    .color-range{
+                        background: #ffffff;
+                        height: 34px;
+                        margin: 3px 0px;
+                        position: relative;
+                        width: 150px;
+                        .color-row{
+                            height: 20px;
+                            line-height: 20px;
+                            position: absolute;
+                            top: 0;
+                            width: calc(100% - 20px);
+                            margin: 0 10px;
+                            .color-area{
+                                width: 20%;
+                                position: relative;
+                                height: 14px;
+                                display: inline-flex;
+                                margin: 3px 0px;
+                            }
+                            .color1{
+                                background: #012c3c;
+                            }
+                            .color2{
+                                background: #015778 ;
+                            }
+                            .color3{
+                                background: #00adef;
+                            }
+                            .color4{
+                                background: #66cef5;
+                            }
+                            .color5{
+                                background: #9ae0f9;
+                            }
+                        }
+                        .text-row{
+                            color: #000;
+                            position: relative;
+                            height: 14px;
+                            line-height: 14px;
+                            top: 20px;
+                            font-size: 10px;
+                            margin: 0 10px;
+                        }
+                    }
+                    .right-title{
+                        padding: 5px 10px;
+                        color: #ffffff;
+                        background: #2f323e; 
+                        &:hover{
+                            cursor: pointer;
+                            color: #182037;
+                            background: #5bc0de;
+                        }  
+                    }
+                    .active{
+                        color: #182037;
+                        background: #5bc0de; 
+                    }
+                }
+                .top-challenger{
+                    font-size: 12px;
+                    padding-left: 10px;
+                    .content-challenger{
+                        .headerTable{
+                            color: #666;
+                            font-size: 12px;
+                            font-weight: 600;
+                            height: 35px;
+                            div{
+                                padding: 0 5px;
+                            }
+                        }
+                        .bodyTable{                              
+                            height: auto;
+                            color: #ffffff;                        
+                            a {
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                width: 75%;
+                                text-align: left;
+                                color: #fff
+                            }                              
+                            .rowBody {
+                                div {
+                                    padding: 0px;
+                                    justify-content: center;
+                                }                               
+                                color: #ffffff;
+                                height: 35px;
+                                line-height: 33px;
+                                &:hover{
+                                    color: #182037;
+                                    background: #5bc0de;   
+                                    cursor: pointer;                                        
+                                }
+                            }                               
+                        }
+                    }
+                    .table-responsive{
+                        max-height: 300px;
+                        thead{
+                            border: none !important;
+                            tr{
+                                border: none !important;
+                                th{
+                                    border: none !important;
+                                }
+                            }
+                        }
+                        tbody{
+                            border: none !important;
+                            tr{
+                                border: none !important;
+                                cursor: pointer;
+                                td{
+                                    border: none !important;
+                                    color: #ffffff;
+                                    padding: 8px;
+                                    
+                                }
+                                &:hover{
+                                    background: #5bc0de;   
+                                    td{
+                                        color: #182037;
+                                    }                                 
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .overall{
+                    width: 100%;
+                    height: 260px;
+                    left: 0;
+                    //background: red;
+                    font-size: 10px;
+                    padding: 30px 5px;
+                    display: flex;
+                    .img-side{
+                        width: 80%;
+                        text-align: center;
+                        img{
+                            width: 100%;
+                            max-width: 230px;
+                            text-align: center;
+                            height: 190px;
+                        }
+                    }
+                    .value-side{
+                        width: 20%;
+                        .view-row{
+                            position: relative;
+                            top: 45px;
+                            /*span{
+                                height: 50px;
+                                line-height: 50px;
+                                top: 20px;
+                                position: absolute;
+                            }*/
+                        }
+                        .upload-row{
+                            position: relative;
+                            top: 85px;
+                            /*span{
+                                height: 30px;
+                                line-height: 30px;
+                                top: 30px;
+                                position: absolute;
+                            }*/
+                        }
+                        .creator-row{
+                            // height: 40px;
+                            // position: relative;
+                            position: relative;
+                            top: 115px;
+                            /*span{
+                                height: 30px;
+                                line-height: 30px;
+                                top: 10px;
+                                position: absolute;
+                            }*/
+                        }
+                        .reward-row{
+                            // height: 40px;
+                            // position: relative;
+                            position: relative;
+                            top: 135px;
+                            /*span{
+                                height: 30px;
+                                line-height: 30px;
+                                top: 10px;
+                                position: absolute;
+                            }*/
+                        }
+                    }                    
+                    .span-view{
+                        line-height: 70px;
+                        height: 70px;
+                        display: flex;
+                        position: relative;                        
+                        .left-side{
+                            width: 230px;
+                            position: relative;
+                            display: flex;
+                            img{
+                                height: 70px;
+                            }
+                            span{
+                                height: 50px;
+                                position: absolute;
+                                width: 230px;
+                                text-align: center;
+                                line-height: 50px;
+                                top: 20px;
+                            }
+                        }
+                        .right-side{
+                            span{
+                                height: 50px;
+                                position: absolute;
+                                width: 50px;
+                                text-align: left;
+                                line-height: 50px;
+                                top: 20px;
+                            }
+                        }                     
+                        
+                    }
+                    .span-upload{
+                        line-height: 70px;
+                        height: 70px;
+                        display: flex;
+                        position: relative; 
+                        .left-side{
+                            width: 230px;
+                            position: relative;
+                            display: flex;
+                            img{
+                                height: 60px;
+                                margin: 5px 0px;
+                            }
+                            span{
+                                height: 50px;
+                                position: absolute;
+                                width: 230px;
+                                text-align: center;
+                                line-height: 50px;
+                                top: 20px;
+                            }
+                        }
+                        .right-side{
+                            span{
+                                height: 50px;
+                                position: absolute;
+                                width: 50px;
+                                text-align: left;
+                                line-height: 50px;
+                                top: 20px;
+                            }
+                        }
+                        
+                    }
+                    .span-creator{
+                        line-height: 70px;
+                        height: 70px;
+                        display: flex;
+                        position: relative; 
+                        .left-side{
+                            width: 230px;
+                            position: relative;
+                            display: flex;
+                            img{
+                                height: 60px;
+                                margin: 5px 0px;
+                            }
+                            span{
+                                height: 50px;
+                                position: absolute;
+                                width: 230px;
+                                text-align: center;
+                                line-height: 50px;
+                                top: 20px;
+                            }
+                        }
+                        .right-side{
+                            span{
+                                height: 50px;
+                                position: absolute;
+                                width: 50px;
+                                text-align: left;
+                                line-height: 50px;
+                                top: 20px;
+                            }
+                        }
+                    }             
+                    .span-reward{
+                        line-height: 70px;
+                        height: 70px;
+                        display: flex;
+                        position: relative; 
+                        .left-side{
+                            width: 230px;
+                            position: relative;
+                            display: flex;
+                            img{
+                                height: 60px;
+                                margin: 5px 0px;
+                            }
+                            span{
+                                height: 50px;
+                                position: absolute;
+                                width: 230px;
+                                text-align: center;
+                                line-height: 50px;
+                                top: 20px;
+                            }
+                        }
+                        .right-side{
+                            span{
+                                height: 50px;
+                                position: absolute;
+                                width: 50px;
+                                text-align: left;
+                                line-height: 50px;
+                                top: 20px;
+                            }
+                        }
+                        
+                    }
+                }
+                
+                
+                
+                
+                
+            }
+                    
+            
+        }
+        
+        .chart-box{
+            min-height: 367px;  
+            margin: 0 !important;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1470px) {
+    .client-dashboard{
+        .chart-row{
+            margin: 10px 0px;
+            height: auto;
+            .chart-block{
+                .weekly-monthly{                                
+                    .rsm-svg, .rsm-zoomable-group, .rsm-geographies{
+                        height: 310px !important;
+                        position: absolute;
+                        width: 100%;
+                        left: 15px;
+                    }
+                    .zoominout{
+                        display: grid;
+                        margin-top: 230px;
+                        padding: 5px;
+                        position: relative;
+                        button{
+                            margin: 5px 0px;
+                        }
+                    }     
+                    .top-challenger{
+                        font-size: 12px;
+                        color: #ffffff;
+                        a {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 75%;
+                            text-align: left;
+                        }       
+                        .table-responsive{
+                            max-height: 300px;
+                            overflow-y: scroll;
+                            thead{
+                                border: none !important;
+                                tr{
+                                    border: none !important;
+                                    th{
+                                        border: none !important;
+                                    }
+                                }
+                            }
+                            tbody{
+                                border: none !important;
+                                tr{
+                                    border: none !important;
+                                    cursor: pointer;
+                                    td{
+                                        border: none !important;
+                                        color: #ffffff;
+                                        padding: 8px;
+                                        
+                                    }
+                                    &:hover{
+                                        background: #5bc0de;   
+                                        td{
+                                            color: #182037;
+                                        }                                 
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }         
+                }
+            }
+        }
+    }  
+}
+@media screen and (max-width: 1170px) {
+    .client-dashboard{
+        
+        .chart-row{
+            margin: 10px 0px;
+            height: auto;
+            max-height: 320px !important;
+            .chart-block{
+                padding: 5px;
+                min-height: 300px !important;
+                .weekly-monthly{                                
+                    height: 300px !important; 
+                    .overall{
+                        width: 100%;
+                        height: 260px;
+                        left: 0;
+                        font-size: 10px;
+                        padding: 30px 5px;
+                        display: flex;
+                        .img-side{
+                            width: 80%;
+                            img{
+                                width: 100%;
+                                max-width: 230px;
+                                text-align: center;
+                                height: 170px;
+                            }
+                        }
+                        .value-side{
+                            width: 20%;
+                            .view-row{
+                                position: relative;
+                                top: 40px;
+                            }
+                            .upload-row{
+                                position: relative;
+                                top: 75px;
+                            }
+                            .creator-row{
+                                position: relative;
+                                top: 95px;
+                            }
+                            .reward-row{
+                                position: relative;
+                                top: 115px;
+                            }
+                        }                    
+                    }  
+                    .content-chart{
+                        min-height: 260px !important;
+                        height: 260px !important;
+                        .content-challenger{
+                            .bodyTable {
+                                max-height: 220px !important;
+                            }
+                        }
+                    }   
+                    .rsm-svg, .rsm-zoomable-group, .rsm-geographies{
+                        height: 240px !important;
+                        position: absolute;
+                        width: 100%;
+                        left: 15px;
+                    }
+                    .zoominout{
+                        display: grid;
+                        margin-top: 160px;
+                        right: 10px;
+                        padding: 5px;
+                        position: relative;
+                        button{
+                            margin: 5px 0px;
+                        }
+                    }                  
+                }
+                .span-view{
+                    line-height: 60px !important;
+                    img{
+                        height: 50px !important;
+                    }
+                    span{                        
+                        text-align: left;
+                        color: #ffffff;
+                        font-size: 10px;
+                        margin: 0 auto;
+                        width: 80%;
+                        position: absolute;
+                    }
+                    
+                }
+                
+                .span-upload{
+                    line-height: 45px !important;
+                    img{
+                        height: 35px !important;
+                    }
+                    span{                        
+                        text-align: left;
+                        color: #ffffff;
+                        font-size: 10px;
+                        width: 100%;
+                        position: absolute;
+                        margin: 0 auto;
+                    }
+                    
+                }
+                .span-creator{
+                    line-height: 45px !important;
+                    img{
+                        height: 35px !important;
+                    }
+                    span{                        
+                        text-align: left;
+                        color: #ffffff;
+                        font-size: 10px;
+                        width: 100%;
+                        position: absolute;
+                        margin: 0 auto;
+                    }
+                }             
+                .span-reward{
+                    line-height: 35px !important;
+                    img{
+                        height: 25px !important;
+                    }
+                    span{                        
+                        text-align: left;
+                        color: #ffffff;
+                        font-size: 10px;
+                        margin: 0 auto;
+                        width: 100%;
+                        position: absolute;
+                    }
+                    
+                }
+            }
+        }
+    }  
+}
+@media screen and (max-width: 991px) {
+    .client-dashboard{
+        .chart-row{
+            margin: 10px 0px;            
+            height: auto;
+            max-height: 280px !important;
+            .margin5px {
+                padding: 5px !important;
+            }
+            .chart-block{
+                padding: 5px;
+               
+                .weekly-monthly{                               
+                    
+                    .content-chart{                     
+                        
+                        .content-challenger{
+                            .headerTable{
+                                font-size: 12px;
+                            }
+                            .bodyTable{
+                                a {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    width: 100%;
+                                    text-align: left;
+                                }     
+                                color: #ffffff;  
+                                font-size: 12px;
+                                height: auto;                                
+                                max-height: 160px !important;    
+                                overflow-x: hidden;                            
+                            }
+                        }
+                    }    
+                    .rsm-svg, .rsm-zoomable-group, .rsm-geographies{
+                        height: 200px !important;
+                        position: absolute;
+                        width: 100%;
+                        left: 15px;
+                    }
+                    .zoominout{
+                        display: grid;
+                        margin-top: 130px;
+                        padding: 5px;
+                        position: absolute;
+                        right: 0;
+                    }            
+                }
+                .span-view{
+                    line-height: 50px !important;
+                    img{
+                        height: 40px !important;
+                    }
+                    span{                        
+                        text-align: left;
+                        color: #ffffff;
+                        font-size: 10px;
+                        margin: 0 auto;
+                        width: 80%;
+                        position: absolute;
+                    }
+                    
+                }
+                
+                .span-upload{
+                    line-height: 40px !important;
+                    img{
+                        height: 30px !important;
+                    }
+                    span{                        
+                        text-align: left;
+                        color: #ffffff;
+                        font-size: 10px;
+                        width: 100%;
+                        position: absolute;
+                        margin: 0 auto;
+                    }
+                    
+                }
+                .span-creator{
+                    line-height: 40px !important;
+                    img{
+                        height: 30px !important;
+                    }
+                    span{                        
+                        text-align: left;
+                        color: #ffffff;
+                        font-size: 10px;
+                        width: 100%;
+                        position: absolute;
+                        margin: 0 auto;
+                    }
+                }             
+                .span-reward{
+                    line-height: 30px !important;
+                    img{
+                        height: 20px !important;
+                    }
+                    span{                        
+                        text-align: left;
+                        color: #ffffff;
+                        font-size: 10px;
+                        margin: 0 auto;
+                        width: 100%;
+                        position: absolute;
+                    }
+                    
+                }
+            }
+        }
+    }  
+}
+@media screen and (max-width: 767px) {
+    .client-dashboard{
+        .chart-row{
+            margin: 10px 0px;            
+            height: auto;
+            max-height: 440px !important;
+            .margin5px {
+                padding: 5px !important;
+            }
+            .chart-block{
+                padding: 5px;
+         
+                .weekly-monthly{                                
+                  
+                    .content-chart{
+                       
+                        .content-challenger{
+                            .headerTable{
+                                font-size: 12px;
+                            }
+                            .bodyTable{
+                                color: #ffffff;
+                                a {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    width: 75%;
+                                    text-align: left;
+                                }       
+                                font-size: 12px;
+                                height: auto;                                
+                                max-height: 360px !important;    
+                                overflow-x: hidden;                            
+                            }
+                        }
+
+                    }   
+                    .rsm-svg, .rsm-zoomable-group, .rsm-geographies{
+                        height: 360px !important;
+                        position: absolute;
+                        width: 100%;
+                        left: 15px;
+                    }   
+                    .zoominout{
+                        display: grid;
+                        margin-top: 280px;
+                        padding: 5px;
+                        position: relative;
+                        width: 15px;
+                        float: right;
+                        button{
+                            margin: 5px 0px;
+                        }
+                    }           
+                }
+                .span-view{
+                    line-height: 80px !important;
+                    img{
+                        height: 70px !important;
+                    }                   
+                }
+                
+                .span-upload{
+                    line-height: 65px !important;
+                    img{
+                        height: 55px !important;
+                    }
+                }
+                .span-creator{
+                    line-height: 55px !important;
+                    img{
+                        height: 45px !important;
+                    }
+                }             
+                .span-reward{
+                    line-height: 45px !important;
+                    img{
+                        height: 35px !important;
+                    }                    
+                }
+            }
+        }
+    }  
+}
+@media screen and (max-width: 480px) {
+    .client-dashboard{
+        .chart-row{
+            margin: 10px 0px;            
+            height: auto;
+            max-height: 300px !important;
+            .margin5px {
+                padding: 5px !important;
+            }
+            .chart-block{
+                padding: 5px;
+                min-height: 300px !important;
+                .weekly-monthly{                                
+                    height: 300px !important;   
+                    .content-chart{
+                        min-height: 260px !important;
+                        height: 260px !important;
+                        .content-challenger{
+                            .headerTable{
+                                font-size: 10px;
+                            }
+                            .bodyTable{
+                                color: #ffffff;
+                                a {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    width: 75%;
+                                    text-align: left;
+                                }       
+                                font-size: 10px;
+                                height: auto;
+                                max-height: 215px;
+                                overflow-x: hidden;                          
+                            }  
+                        }
+                                              
+                    }                 
+                }
+            }
+        }
+    }  
+}

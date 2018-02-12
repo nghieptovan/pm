@@ -1,0 +1,5 @@
+{
+    "BASE_URL": "http://ec2-52-14-145-41.us-east-2.compute.amazonaws.com:8080/entribe-rest",
+    "FACEBOOK_APP_ID": "2028133910798656",
+    "S3_URL": "http://entribe.s3.amazonaws.com"
+}

@@ -1,0 +1,730 @@
+.creator-dashboard{
+    background: #ffffff;
+    // position: fixed;
+    // width: 100%;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    .spinner-loading{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99999;
+    }
+    .container-fluid{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .backtobrand{
+        height: 30px;
+        .back-button{
+            padding: 5px 15px;
+            background: #F24C20;
+            color: #fff;
+            line-height: 30px;
+        }
+    }
+    .content{
+        .title-block{
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            margin: 10px;
+        }
+        .content-block{
+            /* overflow-y: scroll; */
+            .challenge-detail {
+                background: #e2dcdc;    
+                // margin: 0px 10px;        
+                .challenge-detail-header {
+                    position: relative;
+                    height: 214px;
+                    justify-content: center;
+                    display: block;
+                    text-align: center;
+                    margin: 0 auto;
+                    background: #fff;
+                    border: 1px solid #e2dcdc;
+                    padding: 1px;
+                    overflow: hidden;
+                    img {
+                        width: auto;
+                        height: 210px;
+                        min-height: 100%;
+                    }
+                }
+                .challenge-detail-content {
+                    width: 100%;
+                    height: 200px;
+                    position: relative;
+                    .left_side {
+                        height: 200px;
+                        display: block;
+                        margin: 0 auto;
+                        text-align: center;
+                        .chart {
+                            width: 180px;
+                            height: 160px;
+                            span {
+                                top: 50%;
+                                position: absolute;
+                                left: 50%;
+                                width: 74px;
+                                font-size: 12px;
+                                transform: translate(-50%, -50%);
+                            }
+                            .chartarea {
+                                width: 180px;
+                                height: 160px;
+                                .recharts-label-list .recharts-label, .recharts-label-list .recharts-text {
+                                    color: black;
+                                    fill: black;
+                                }
+                            }
+                        }
+                    }
+                    .center_side {
+                        height: 200px;
+                        .challengeName {
+                            padding: 10px 10px;
+                            font-weight: bold;
+                            font-size: 16px;
+                        }
+                        .challengeTime {
+                            font-size: 14px;
+                            font-weight: 350;
+                            padding: 5px 0;
+                        }
+                        .challengeText {
+                            font-size: 14px;
+                            height: 90px;
+                            overflow-x: hidden;
+                            overflow-y: auto;
+                        }
+                        .challengeText::-webkit-scrollbar-track{
+                            background-color: #e6e7e9;
+                        }
+                        
+                        .challengeText::-webkit-scrollbar{
+                            width: 4px;
+                            background-color: #F5F5F5;
+                        }
+                        
+                        .challengeText::-webkit-scrollbar-thumb{
+                            border-radius: 100px;
+                            background-color: #999;
+                        }
+                    }
+                    .right_side {
+                        height: 200px;
+                        position: relative;
+                        button {
+                            width: 90%;
+                            /* display: flow-root; */
+                            position: absolute;
+                            bottom: 0;
+                            background: linear-gradient(to right, #fba05d 0%, #F24C20 100%);
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: 400;
+                            border: none;
+                            height: 32px;
+                            border-radius: 1px;
+                        }
+                    }
+                    .button-take-challenge{
+                        position: absolute;
+                        bottom: 0;
+                        height: auto;
+                        right: 10px;
+                        button {
+                            width: 250px;
+                            /* display: flow-root; */
+                            position: absolute;
+                            bottom: 0;
+                            background: linear-gradient(to right, #fba05d 0%, #F24C20 100%);
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: 400;
+                            border: none;
+                            height: 32px;
+                            border-radius: 1px;
+                            float: right;
+                            right: 0;
+                        } 
+                    }
+                }
+                .challenge-detail-footer {
+                    width: 100%;
+                    height: 150px;
+                    .footer_title {
+                        height: 30px;
+                        line-height: 30px;
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+                    .footer_challengeList {
+                        height: 110px;
+                        margin-top: 15px;
+                        .item-myupload{
+                            background: #ededed;
+                            height: 155px;
+                            margin-bottom: 25px;
+                            .title-content{
+                                height: 50px;
+                                span{
+                                    background: #000000;
+                                    padding: 5px 10px;
+                                    color: #ffffff;
+                                    position: relative;
+                                    top: 10px;
+                                }
+                            }
+                            .body-content{
+                                height: 100px;
+                                img{
+                                    height: 100px;
+                                    width: auto;
+                                }
+                                .lessthansix{
+                                    .slick-cloned{
+                                        display: none !important;
+                                    }  
+                                    .slick-prev {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                    }
+                                    .slick-next {
+                                        opacity: 0;
+                                        pointer-events: none;
+                                    }
+                                }
+                                .slick-slider{
+                                    .slick-arrow1{
+                                        height: 100px;
+                                        background: #000000;
+                                        position: absolute;
+                                        top: 50px;
+                                        width: 15px;
+                                        line-height: 100px;
+                                    }
+                                    .slick-prev1 {
+                                        left: -15px;
+                                        display: block;
+                                        transform: translate(0, -50%);
+                                        cursor: pointer;
+                                        color: transparent;
+                                        border: none;                            
+                                        color: #ffffff;
+                                    }
+                                    .slick-next1 {
+                                        right: -15px;
+                                        display: block;
+                                        transform: translate(0, -50%);
+                                        cursor: pointer;
+                                        color: transparent;
+                                        border: none;
+                                        color: #ffffff;
+                                    }
+                                    .slick-list{
+                                        margin: 0 5px;
+                                        .img-content{                                
+                                            padding: 0 5px;    
+                                            margin: auto;
+                                            display: block;                    
+                                            // margin-right: 10px;
+                                            .img-bg{
+                                                text-align: center;
+                                                background: #000000;
+                                                overflow: hidden;
+                                            }
+                                            .mash-item{
+                                                position: relative;
+                                                bottom: 45px;
+                                                height: 45px;
+                                                .video-icon{
+                                                    position: relative;
+                                                    border: 1px solid #000;
+                                                    width: 24px;
+                                                    height: 24px;
+                                                    text-align: center;
+                                                    border-radius: 50%;
+                                                    background: #000;
+                                                    padding: 3px 5px;
+                                                    left: calc(50% - 12px);
+                                                    bottom: 15px;
+                                                    z-index: 999;
+                                                    i{
+                                                        color: #ffffff;
+                                                    }
+                                                }
+                                                .footer-content{
+                                                    background: #000000;
+                                                    opacity: 0.8;
+                                                    width: 100%;
+                                                    position: absolute;
+                                                    bottom: 0px;
+                                                    height: 30px;
+                                                    color: #fff;
+                                                    p{
+                                                        line-height: 10px;
+                                                        
+                                                        margin-bottom: 3px;
+                                                        margin-left: 5px;
+                                                        color: #ffffff;
+                                                        span{
+                                                            margin-left: 5px;
+                                                            i{
+                                                                margin: 0 2px;
+                                                            }
+                                                            .active{
+                                                                color: #FAE30C;
+                                                            }
+                                                        }
+                                                    }
+                                                    .top-p{
+                                                        font-size: 11px;
+                                                        overflow: hidden;
+                                                        height: 17px;
+                                                        line-height: 17px;
+                                                        position: relative;
+                                                        margin: 0 5px;
+                                                        width: calc(100% - 10px);
+                                                        text-transform: lowercase;
+                                                        &::first-letter {
+                                                            text-transform: uppercase;
+                                                        }
+                                                        
+                                                    }
+                                                    
+                                                        .right-span{
+                                                            position: absolute;
+                                                            display: block;
+                                                            right: 15px;
+                                                        }
+                                                    }
+                                                    .bot-p{
+                                                        display: -webkit-inline-box;
+                                                        display: -ms-inline-flexbox;
+                                                        font-size: 7px;
+                                                        display: inline-flex;
+                                                        height: 13px;
+                                                        line-height: 13px;
+                                                        margin: 0px 0 0 5px;
+                                                        color: #ffffff;
+                                                        position: absolute;
+                                                        width: calc(100% - 10px);
+                                                        color: #ffffff;
+                                                        .left-span{
+                                                            width: 90px !important;
+                                                            overflow: hidden !important;
+                                                            position: relative;
+                                                            display: block;
+                                                        }
+                                                }
+                                            }
+                                            
+                                        }
+                                        .slick-slide img {
+                                            display: block;
+                                            margin: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+            }
+            .item{
+                height: 170px;   
+                background: transparent;
+                padding: 0px 10px;  
+                color: #ffffff; 
+                margin-bottom: 20px;  
+                
+                animation: 300ms appear 30ms ease-in-out forwards;
+                transition: all 333ms ease-in-out;
+                transition-delay: 100ms;
+                cursor: pointer;
+                .content-item{
+                    height: 170px;   
+                    width: 100%;
+                    .header-item{
+                        width: calc(100% - 20px);;
+                        height: 30px;
+                        position: absolute;
+                        top: 0;
+                        background: #000000;
+                        opacity: 0.6;  
+                        display: none;
+                        p{
+                            height: 10px;
+                            line-height: 10px;
+                            margin: 3px;
+                            font-size: 9px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }                                         
+                    }
+                    .body-item{  
+                        text-align: center;
+                        background: #000;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        overflow: hidden;                    
+                        img{
+                            height: 170px;
+                            max-height: 170px;
+                        }
+                    }
+                    .footer-item{
+                        position: absolute;
+                        bottom: 0;
+                        width: calc(100% - 20px);;
+                        height: 30px;
+                        background: linear-gradient(to right, #F24C20 0%, #fba05d 100% );
+                        padding: 5px;
+                        .name{
+                            float: left;
+                            width: calc(100% - 60px);
+                            white-space: nowrap;
+                            text-overflow: ellipsis;;
+                        }
+                        .take{
+                            float: right;
+                            background: #ffffff;
+                            color: #000000;
+                            padding: 0 8px;
+                            font-weight: bold;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    
+                    &:hover{
+                        .header-item{
+                            display: block;
+                            -webkit-transition-delay: 0.3s;
+                            transition-delay: 0.3s;
+                        }
+                    }
+                }       
+                .content-item-brand{
+
+                    height: 170px;   
+                    width: 100%;
+                    .header-item{
+                        width: calc(100% - 20px);
+                        height: 30px;
+                        position: absolute;
+                        top: 0;
+                        background: #000000;
+                        opacity: 0.6;  
+                        // display: none;
+                        p{
+                            height: 24px;
+                            line-height: 24px;
+                            margin: 3px;
+                            font-size: 12px;
+                        }                                         
+                    }
+                    .body-item{  
+                        width: calc(100%);;                  
+                        text-align: center;
+                        background: #000;
+                        height: 100%;
+                        .LazyLoad{
+                            display: flex;
+                            justify-content: center;
+                            overflow: hidden;
+                            img{
+                                border: 1px solid gray;
+                                height: 170px;
+                                max-height: 170px;
+                            }
+                        }
+                        
+                    }
+                    .footer-item{
+                        position: absolute;
+                        bottom: 0;
+                        width: calc(100% - 20px);;
+                        height: 30px;
+                        padding: 5px;
+                        text-align: center;
+                        .name{
+                            
+                            width: calc(100% - 60px);
+                            white-space: nowrap;
+                            text-overflow: ellipsis;;
+                        }
+                      
+                    }
+                    &:hover{
+                        .header-item{
+                            display: block;
+                            -webkit-transition-delay: 0.3s;
+                            transition-delay: 0.3s;
+                        }
+                    }
+                 
+                }
+                
+                
+                
+            }
+            .item-no-token{
+                width: 20%;
+                height: 190px;
+            }
+            .item-myupload{
+                background: #ededed;
+                height: 155px;
+                margin-bottom: 25px;
+                .title-content{
+                    height: 50px;
+                    span{
+                        background: #000000;
+                        padding: 5px 10px;
+                        color: #ffffff;
+                        position: relative;
+                        top: 10px;
+                    }
+                }
+                .body-content{
+                    height: 100px;
+                    img{
+                        height: 100px;
+                        width: auto;
+                    }
+                    .lessthansix{
+                        .slick-cloned{
+                            display: none !important;
+                        }  
+                        .slick-prev {
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+                        .slick-next {
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+                    }
+                    .slick-slider{
+                        .slick-arrow1{
+                            height: 100px;
+                            background: #000000;
+                            position: absolute;
+                            top: 50px;
+                            width: 15px;
+                            line-height: 100px;
+                        }
+                        .slick-prev1 {
+                            left: -15px;
+                            display: block;
+                            transform: translate(0, -50%);
+                            cursor: pointer;
+                            color: transparent;
+                            border: none;                            
+                            color: #ffffff;
+                        }
+                        .slick-next1 {
+                            right: -15px;
+                            display: block;
+                            transform: translate(0, -50%);
+                            cursor: pointer;
+                            color: transparent;
+                            border: none;
+                            color: #ffffff;
+                        }
+                        .slick-list{
+                            margin: 0 5px;
+                            .img-content{                                
+                                padding: 0 5px;    
+                                margin: auto;
+                                display: block;                    
+                                // margin-right: 10px;
+                                .img-bg{
+                                    text-align: center;
+                                    background: #000000;
+                                    overflow: hidden;
+                                }
+                                .mash-item{
+                                    position: relative;
+                                    bottom: 45px;
+                                    height: 45px;
+                                    .video-icon{
+                                        position: relative;
+                                        border: 1px solid #000;
+                                        width: 24px;
+                                        height: 24px;
+                                        text-align: center;
+                                        border-radius: 50%;
+                                        background: #000;
+                                        padding: 3px 5px;
+                                        left: calc(50% - 12px);
+                                        bottom: 15px;
+                                        z-index: 999;
+                                        i{
+                                            color: #ffffff;
+                                        }
+                                    }
+                                    .footer-content{
+                                        background: #000000;
+                                        opacity: 0.8;
+                                        width: 100%;
+                                        position: absolute;
+                                        bottom: 0px;
+                                        height: 30px;
+                                        color: #fff;
+                                        p{
+                                            line-height: 10px;
+                                            
+                                            margin-bottom: 3px;
+                                            margin-left: 5px;
+                                            color: #ffffff;
+                                            span{
+                                                margin-left: 5px;
+                                                i{
+                                                    margin: 0 2px;
+                                                }
+                                                .active{
+                                                    color: #FAE30C;
+                                                }
+                                            }
+                                        }
+                                        .top-p{
+                                            font-size: 11px;
+                                            overflow: hidden;
+                                            height: 17px;
+                                            line-height: 17px;
+                                            position: relative;
+                                            margin: 0 5px;
+                                            width: calc(100% - 10px);
+                                            text-transform: lowercase;
+                                            &::first-letter {
+                                                text-transform: uppercase;
+                                            }
+                                            
+                                        }
+                                        
+                                            .right-span{
+                                                position: absolute;
+                                                display: block;
+                                                right: 15px;
+                                            }
+                                        }
+                                        .bot-p{
+                                            display: -webkit-inline-box;
+                                            display: -ms-inline-flexbox;
+                                            font-size: 7px;
+                                            display: inline-flex;
+                                            height: 13px;
+                                            line-height: 13px;
+                                            margin: 0px 0 0 5px;
+                                            color: #ffffff;
+                                            position: absolute;
+                                            width: calc(100% - 10px);
+                                            color: #ffffff;
+                                            .left-span{
+                                                width: 90px !important;
+                                                overflow: hidden !important;
+                                                position: relative;
+                                                display: block;
+                                            }
+                                    }
+                                }
+                                
+                            }
+                            .slick-slide img {
+                                display: block;
+                                margin: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-side{
+            .content-block{
+                .item{
+                    height: 130px;
+                    .content-item{
+                        height: 90px;
+                        .body-item{
+                            height: 90px;
+                            display: flex;
+                            justify-content: center;
+                            overflow: hidden;
+                            .reward-icon{
+                                position: absolute;
+                                top: 2px;
+                                left: 15px;
+                                .detail{
+                                    background: #f39c12;
+                                    font-size: 11px;
+                                    border-radius: 5px;
+                                    padding: 2px 5px;
+                                    i{
+                                        margin-right: 2px;
+                                    }
+                                }
+                            }
+                            img{
+                                height: 90px !important;
+                            }
+                            .video-icon{
+                                position: relative;
+                                top: 35px !important;
+                                height: 16px;
+                                width: 16px;
+                            }
+                        }
+                        .footer-item-right{
+                            position: absolute;
+                            bottom: 0;
+                            width: calc(100% - 20px);;
+                            height: 40px;
+                            background: #ededed;
+                            text-align: center;
+                            p{
+                                color: #000000;
+                                height: 20px;
+                                line-height: 20px;
+                                margin: 0px;
+                                font-size: 12px;
+                            }  
+                            .title-reward{
+                                font-weight: bold;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;                           
+                                text-align: center;
+                                margin: 0 10px
+                            }
+                            .logo-client{
+                                position: absolute;
+                                left: 0px;
+                                height: 40px;
+                                width: 40px;
+                                padding: 5px;
+                                img{
+                                    height: 30px;
+                                    max-width: 30px;
+                                    overflow: hidden;
+                                }
+                            }
+                            .detail-upload{
+                                position: absolute;
+                                left: 40px;
+                                width: calc(100% - 40px);
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+    }
+}

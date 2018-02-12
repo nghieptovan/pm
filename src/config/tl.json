@@ -1,0 +1,5 @@
+{
+    "BASE_URL": "http://10.20.26.107:8080/entribe-rest",
+    "FACEBOOK_APP_ID": "1392490984192953",
+    "S3_URL": "http://entribedev.s3.amazonaws.com"
+}

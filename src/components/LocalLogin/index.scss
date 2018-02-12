@@ -1,0 +1,480 @@
+$color: #e15c26;
+$color_gradient_start: #f24e22;
+$color_gradient_end: #fba05d;
+
+/** New CSS style*/
+
+.loginPage {
+  .spinner-loading{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 99999;
+}
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  overflow-y: auto;
+
+  /* Old browsers */
+  background: $color;
+  /* FF3.6-15 */
+  background: -moz-linear-gradient(top, $color_gradient_start 0%, $color_gradient_end 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(top, $color_gradient_start 0%, $color_gradient_end 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, $color_gradient_start 0%, $color_gradient_end 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24e22', endColorstr='#fba05d', GradientType=0);
+
+  .client{
+    margin: 80px 65px;
+    background: #FFFFFF;
+    height: calc(100% - 160px);
+    position: relative;
+    z-index: 15;
+    overflow: hidden;
+  }
+  .admin{
+    margin: 80px 65px;
+    background: #FFFFFF;
+    height: calc(100% - 160px);
+    position: relative;
+    z-index: 15;
+    overflow: hidden;
+  }
+  .background-wrapper {
+    width: 70%;
+    padding-top: 70%;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 15%;
+    margin-top: -35%;
+    .background {
+      -webkit-box-shadow: inset 1px 1px 13px 1px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: inset 1px 1px 13px 1px rgba(0, 0, 0, 0.15);
+      box-shadow: inset 1px 1px 13px 1px rgba(0, 0, 0, 0.15);
+      background-color: #f2f2f2;
+      border-radius: 50%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+  }
+  .content-wrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+
+    form.login-form {
+      width: 25%;
+      position: relative;
+      margin: 0px auto;
+      min-height: 300px;
+      top: 50%;
+      margin-top: -200px;
+
+      .form-group {
+        margin: 0px;
+      }
+      .logo-type {
+        width: 60%;
+        margin: auto;
+        position: relative;
+        margin-bottom: 30%;
+        z-index: 100;
+        img {
+          width: 100%;
+          height: auto;
+          margin: 0;
+        }
+        .nameRoles {
+          font-size: 16px;
+          position: absolute;
+          right: 0;
+          margin: 0px;
+          color: $color;
+          font-weight: 500;
+          text-transform: capitalize;
+        }
+      }
+      .formgroup {
+        margin: 0px 0px 20px 0px;
+        position: relative;
+        height: 60px;
+        label {
+          width: 100%;
+          color: #737373;
+          font-weight: 400;
+          font-size: 12px;
+          height: 14px;
+          line-height: 14px;
+        }
+        .inputLogin {
+          margin: 0px 0px 5px 0px;
+          width: 100%;
+          height: auto;
+          display: block;
+          border: none;
+          padding: 5px 0px;
+          font-size: 16px;
+          border-bottom: solid 1px #bababa;
+          -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+          transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+          background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #bababa 4%);
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #bababa 4%);
+          background-position: -100% 0;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        }
+        .login-verify-user {
+          color: red;
+          margin: 0px;
+          font-size: 12px;
+          position: absolute;
+          top: 60px;
+        }
+        &.remember-wrapper {
+          height: auto;
+          padding-top: 10px;
+          
+          .remerber {
+            height: 16px;
+            margin-top: -30px;
+            line-height: 16px;
+            width: fit-content;
+            color: #737373;
+            font-weight: 400;
+            font-size: 12px;
+            input {
+              margin: 0px;
+              width: 16px;
+              height: 16px;
+              position: relative;
+              background: #fcfff4;
+            }
+            p {
+              color: #e15c26;
+              height: 16px;
+              margin: 0px 0px 0px 5px;
+              line-height: 20px;
+            }
+          }
+        }
+        &.submit-wrapper {
+          height: auto;
+          margin-top: 10%;
+          button {
+            margin: 0px auto;
+            width: fit-content;
+            padding: 0px 10px;
+            height: 30px;
+            span {
+              height: 30px;
+              line-height: 31px;
+              font-size: 17px;
+            }
+            i {
+              margin: 0px 0px 0px 5px;
+              font-size: 25px;
+              line-height: 29px;
+              height: 30px;
+            }
+          }
+        }
+        .remember-wrapper{
+          display: flex;
+          width: 150px;
+          height: 30px;
+          line-height: 30px;
+          input{
+            height: 13px;
+            width: 13px;
+            margin: 0;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            vertical-align: middle;
+            margin-top: 8.5px;
+          }
+          p{
+            margin: 0;
+            margin-left: 5px;
+            color: #e15c26;
+            height: 30px;
+            line-height: 30px;            
+          }
+        }
+      }
+      .login-error-message {
+        font-weight: 400;
+        color: red;
+        font-size: 12px;
+        margin-left: 15px;
+      }
+    }
+    form.form-signup{
+      width: 50%;
+      position: relative;
+      margin: 0px auto;
+      min-height: 300px;
+      top: 50%;
+      margin-top: -250px;
+      .logo-type {
+        margin-bottom: 5%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+        img{
+          height: 40px;
+          width: auto;
+        }
+      }
+      .formgroup {
+        label{
+          color: #000000;
+          font-weight: 400;
+        } 
+        &.remember-wrapper{
+          height: 40px;
+          width: 300px;
+          margin: 0 auto;
+        }
+        &.captcha-wrapper{
+          margin: 0 auto;
+          width: 300px;
+          height: 80px;
+        }
+        &.submit-wrapper{
+          margin-top: 30px !important;
+        }
+      }        
+      
+      
+    }
+  }
+  /** End New CSS style*/
+  input::-webkit-input-placeholder,
+  button {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  i {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  i:hover {
+    cursor: pointer;
+  }
+  /*label {
+    margin: 15px 25px 0 25px;
+    width: 400px;
+    color: #737373;
+    height: 11px;
+    font-weight: 400;
+    font-size: 12px;
+  }*/
+  form {
+    width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 10%;
+    .login-verify-user {
+      color: red;
+      margin-left: 30px;
+    }
+  }
+  input:focus,
+  input:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+  }
+  button {
+    border: none;
+    background: $color;
+    cursor: pointer;
+    padding: 6px;
+    width: 75px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  button:hover {
+    /**-webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);*/
+  }
+  .logo-type {
+    margin-bottom: 40px;
+  }
+  .formgroup {
+    margin-left: 0px;
+    margin-right: 0px;
+    z-index: 100;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+.css {
+  background: $color;
+}
+
+.remerber {
+  width: 400px;
+  display: flex;
+  cursor: pointer;
+  p {
+    margin: 3px 5px;
+    color: $color;
+  }
+  input {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    background: #fcfff4;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    input[type=checkbox] {
+      visibility: hidden;
+      &:checked+label:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+/*.inputLogin {
+  margin: 0 25px;
+  width: 350px;
+  height: 30px;
+  display: block;
+  border: none;
+  padding: 10px 0 5px 0;
+  font-size: 16px;
+  border-bottom: solid 1px #bababa;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #bababa 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #bababa 4%);
+  background-position: -350px 0;
+  background-size: 350px 100%;
+  background-repeat: no-repeat;
+}*/
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+
+/*.nameRoles {
+  color: $color;
+  font-weight: bold;
+  float: right;
+  margin-right: 128px;
+}*/
+
+
+/**.login-error-message {
+  margin-top: 20px;
+  position: absolute;
+  margin-left: 25px !important;
+}*/
+
+.login-error-message:before{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\F06A';
+  margin-right: 5px;
+}
+
+.button-disable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.button-enable {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .loginPage {
+    .Client{
+      background: transparent;
+      margin: 80px 0px;
+    }
+    .background-wrapper {
+      width: 150%;
+      padding-top: 150%;
+      position: fixed;
+      margin: auto;
+      top: 50%;
+      margin-top: -75%;
+      left: 50%;
+      z-index: -1;
+      margin-left: -75%;
+    }
+    .content-wrapper {
+      position: relative;
+      width: 100%;
+      margin: auto;
+
+      form.login-form{
+        width: 80%;
+        .logo-type{
+          width: 60%;
+          margin-bottom: 25%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-height:400px){
+  .loginPage{
+    .content-wrapper{
+      form.login-form {
+        padding: 2% 0px;
+        top:0px;
+        margin-top: 0px;
+      }
+    }
+  }
+}
